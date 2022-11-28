@@ -1,0 +1,58 @@
+
+/* 人気記事トップ3の表示スタイルを変える
+------------------------------------------------------ */
+.m_ranking .wpost-item:nth-child(1)::after{
+    background: orange;
+    font-weight: 700;
+}
+.m_ranking .wpost-item:nth-child(2)::after{
+    background: rgb(182, 205, 204);
+    font-weight: 700;
+}
+.m_ranking .wpost-item:nth-child(3)::after{
+    background: red;
+    font-weight: 700;
+}
+
+
+/* highlightの右上のコード名の種類を出すためのCSS
+------------------------------------------------------ */
+pre code.hljs {
+    position: relative;
+    padding: 40px 12px 12px;
+  }
+  
+  .hljs::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    color: #fff;
+    font-weight: bold;
+    padding: 2px 8px;
+  }
+  
+  .hljs.language-html::before {
+    content: 'HTML';
+    background-color: #e44d26;
+  }
+  
+  .hljs.language-xml::before {
+    content: 'HTML';
+    background-color: #e44d26;
+  }
+  
+  .hljs.language-css::before {
+    content: 'CSS';
+    background-color: #006eb9;
+  }
+  
+  .hljs.language-javascript::before {
+    content: 'JavaScript';
+    background-color: #e5a228;
+  }
+  
+  .hljs.language-php::before {
+    content: 'PHP';
+    background-color: #8892bf;
+  }
